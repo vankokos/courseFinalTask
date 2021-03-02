@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: "dosis";
+}
+
+.left {
+  margin-right: 50px;
+  width: 100%;
+  background-color: white;
+  padding: 50px;
+  min-height: 1000px;
+}
+
+.left__article {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left__article p {
+  font-size: 30px;
+}
+
+.left__article button {
+  height: 30px;
+  width: 130px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "dosis";
+  font-size: 19px;
+  cursor: pointer;
+  background: red;
+  color: white;
+  transition: 0.3s;
+}
+
+.left__article button:hover {
+  background: brown;
+  transition: 0.3s;
+}
+
+.left__body {
+  border-bottom: 3px solid grey;
+  margin-bottom: 40px;
+}
+
+.left__body-namedate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.left__body-namedate-name {
+  color: #00adad;
+}
+
+.left__body-namedate-date {
+  color: grey;
+  font-style: italic;
+}
+
+.left__body-img {
+  margin-bottom: 30px;
+}
+
+.left__body-img img {
+  width: 100%;
+  height: 400px;
+  width: 588px;
+}
+
+.left__body-text {
+  margin-bottom: 30px;
+}
+
+.left__body-text h1 {
+  color: #898989;
+  cursor: pointer;
+  font-size: 19px;
+  transition: 0.4s;
+  width: 20%;
+  font-weight: 400;
+}
+
+.left__body-text h1:hover {
+  color: #545454;
+  transition: 0.4s;
+}
+
+.left__body-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.left__body-btns-left button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 130px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-family: "dosis";
+  font-size: 19px;
+  cursor: pointer;
+  background: #00ff59;
+  color: white;
+  transition: 0.3s;
+}
+
+.left__body-btns-left button:hover {
+  background: #00b23e;
+  transition: 0.3s;
+}
+
+.left__body-btns-left button img {
+  height: 30px;
+}
+
+.left__body-btns-right {
+  display: flex;
+}
+
+.left__body-btns-right button {
+  height: 40px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  font-family: "dosis";
+  font-size: 19px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.left__body-btns-right-comments {
+  margin-right: 20px;
+  background: white;
+  transition: 0.3s;
+}
+
+.left__body-btns-right-comments:hover {
+  background: #f1f0f0;
+  transition: 0.3s;
+}
+
+.left__body-btns-right-write {
+  background: #ffd39a;
+  transition: 0.3s;
+}
+
+.left__body-btns-right-write:hover {
+  background: #cfab7c;
+  transition: 0.3s;
+}
+
+.left__body-comment {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-left: 20px solid lightgrey;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.left__body-comment-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.left__body-comment-top h1 {
+  color: grey;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.left__body-comment-top p {
+  font-weight: 700;
+}
+
+.left__body-writecomment input {
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.left__body-writecomment-author {
+  margin-bottom: 7px;
+  background: lightgrey;
+  font-family: "dosis";
+}
+
+.left__body-writecomment-comment {
+  resize: none;
+  width: 100%;
+  margin-bottom: 7px;
+  background: lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-family: "dosis";
+  font-size: 17px;
+}
+
+.left__body-writecomment-submit {
+  background: lightgrey;
+  font-family: "dosis";
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.left__body-writecomment-submit:hover {
+  background: #ffa000;
+  transition: 0.4s;
+}
+
+.right {
+  width: 80%;
+  background-color: white;
+  padding: 50px;
+}
+
+.right__wrapper {
+  position: fixed;
+}
+
+.right__article {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.right input {
+  width: 100%;
+  background: lightgrey;
+  outline: none;
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.right textarea {
+  width: 100%;
+  resize: none;
+  background: lightgrey;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.right__inputs-author {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.right__inputs-author p {
+  margin-right: 10px;
+}
+
+.right__inputs-text {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.right__inputs-text p {
+  margin-right: 5px;
+}
+
+.right__inputs-img {
+  height: 200px;
+  background-color: lightgrey;
+  margin-bottom: 15px;
+  margin-left: 54px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.right__inputs-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.right__inputs-imgUrl {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.right__inputs-imgUrl input {
+  font-size: 10px;
+}
+
+.right__inputs-submit {
+  font-family: "dosis";
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.right__inputs-submit:hover {
+  background: #ffa000;
+  transition: 0.4s;
+}
+/*# sourceMappingURL=styles.css.map */
